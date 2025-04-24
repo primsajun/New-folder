@@ -154,7 +154,27 @@ function normalizeData(trainData, testData) {
     'featureUsageDecline', 'engagementScore', 'supportSatisfaction',
     'valueRatio', 'churnRiskScore'
   ];
-  
+   const monthlySpend = subscriptionTier === 'basic' ? 
+      Math.random() * 50 + 10 : 
+      subscriptionTier === 'premium' ? 
+        Math.random() * 200 + 50 : 
+        Math.random() * 1000 + 200; const monthlySpend = subscriptionTier === 'basic' ? 
+      Math.random() * 50 + 10 : 
+      subscriptionTier === 'premium' ? 
+        Math.random() * 200 + 50 : 
+        Math.random() * 1000 + 200; const monthlySpend = subscriptionTier === 'basic' ? 
+      Math.random() * 50 + 10 : 
+      subscriptionTier === 'premium' ? 
+        Math.random() * 200 + 50 : 
+        Math.random() * 1000 + 200; const monthlySpend = subscriptionTier === 'basic' ? 
+      Math.random() * 50 + 10 : 
+      subscriptionTier === 'premium' ? 
+        Math.random() * 200 + 50 : 
+        Math.random() * 1000 + 200; const monthlySpend = subscriptionTier === 'basic' ? 
+      Math.random() * 50 + 10 : 
+      subscriptionTier === 'premium' ? 
+        Math.random() * 200 + 50 : 
+        Math.random() * 1000 + 200;
   // Calculate mean and std for each feature from training data
   const stats = {};
   numericalFeatures.forEach(feature => {
