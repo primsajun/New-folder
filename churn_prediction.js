@@ -5,7 +5,34 @@ import { createReadStream } from 'fs';
 import { pipeline } from 'stream/promises';
 import { Transform } from 'stream';
 import * as dfd from 'danfojs-node';
-
+  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}
 // Generate synthetic SaaS customer data for demonstration
 function generateSyntheticData(numSamples = 1000) {
   console.log("Generating synthetic SaaS customer data...");
