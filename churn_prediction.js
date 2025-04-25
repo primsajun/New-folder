@@ -209,7 +209,34 @@ function normalizeData(trainData, testData) {
   
   return { normalizedTrainData, normalizedTestData, stats };
 }
-
+  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}
 // Prepare data for TensorFlow.js
 function prepareForTensorflow(data) {
   // Separate features and labels
