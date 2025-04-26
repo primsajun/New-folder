@@ -9,9 +9,35 @@ import * as dfd from 'danfojs-node';
     const normalized = {...item};
     numericalFeatures.forEach(feature => {
       normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });import { pipeline } from 'stream/promises';
+import { Transform } from 'stream';
+import * as dfd from 'danfojs-node';
+  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
     });
     return normalized;
   });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}  const normalizedTestData = testData.map(item => {
+    const normalized = {...
+    return normalized;
+  });import { pipeline } from 'stream/promises';
+import { Transform } from 'stream';
+import * as dfd from 'danfojs-node';
+  const normalizedTestData = testData.map(item => {
+    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
+    });
+    return normalized;
+  });
+  
+  return { normalizedTrainData, normalizedTestData, stats };
+}  const normalizedTestData = testData.map(item => {
+    const normalized = {...
   
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {
