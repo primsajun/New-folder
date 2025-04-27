@@ -16,6 +16,12 @@ import * as dfd from 'danfojs-node';
     const normalized = {...item};
     numericalFeatures.forEach(feature => {
       normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feat    const normalized = {...item};
+    numericalFeatures.forEach(feature => {    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feat    const normalized = {...item};
+    numericalFeatures.forEach(feature => {    const normalized = {...item};
+    numericalFeatures.forEach(feature => {
+      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feat    const normalized = {...item};
     numericalFeatures.forEach(feature => {
       normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
     });import { pipeline } from 'stream/promises';
