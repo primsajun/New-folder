@@ -518,6 +518,33 @@ function generateBusinessInsights(data, metrics, featureImportance) {
   const churnRate = churnedCustomers / totalCustomers;
   
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
+  function generateBusinessInsights(data, metrics, featureImportance) {
+  console.log("\nGenerating business insights...");
+  
+  // Calculate churn rate
+  const totalCustomers = data.length;
+  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
+  const churnRate = churnedCustomers / totalCustomers;
+  
+  console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
+  function generateBusinessInsights(data, metrics, featureImportance) {
+  console.log("\nGenerating business insights...");
+  
+  // Calculate churn rate
+  const totalCustomers = data.length;
+  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
+  const churnRate = churnedCustomers / totalCustomers;
+  
+  console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
+  function generateBusinessInsights(data, metrics, featureImportance) {
+  console.log("\nGenerating business insights...");
+  
+  // Calculate churn rate
+  const totalCustomers = data.length;
+  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
+  const churnRate = churnedCustomers / totalCustomers;
+  
+  console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
   
   // Analyze churn by subscription tier
   const basicCustomers = data.filter(c => c.tier_basic === 1);
