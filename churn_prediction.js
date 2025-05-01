@@ -46,7 +46,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
      // Calculate churn ra
   const totalCustomers = data.length;
-  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
+  const churnedCustomers = data.filter(customer => customer.churned === 1).lh;
   const churnRate = churnedCustomers / totalCustomers
   consoleconst totalCustomers = data.length
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
