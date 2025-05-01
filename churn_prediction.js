@@ -56,7 +56,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`)
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {const churnRate = churnedCustomersimport { Transform } from 'stream';
-import * as dfd from 'danfojs-node';
+import * as dfd from 'danfojs-no
   const normalizedTestData = testData.map(item => {
     const normalized = {...item}
       // Calculate churn rate
