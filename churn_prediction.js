@@ -41,7 +41,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {malizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => 
-    const normalized = {...  // Calculate churn rat
+    const normalized = {...  // Calculate churn ra
   const totalCustomers = data.length;
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
      // Calculate churn rate
