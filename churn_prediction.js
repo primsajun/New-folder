@@ -67,8 +67,7 @@ import * as dfd from 'danfojs-no
     // Calculate churn rate
   const totalCustomers = data.length;
   const churnedCustomers = data.filter(customer => customer.churne === 1).length;
-  const churnRate = churnedCustomers / totalCustomer
-  
+  const churnRate = churnedCusto
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
