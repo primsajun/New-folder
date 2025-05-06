@@ -260,7 +260,7 @@ import * as dfd from 'danfojs-node';
     numericalFeatures.forEach(feature => {
       normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
     });import { pipeline } from 'stream/promises';
-import { Transform } from 'stream';
+import from 'stream';
 import * as dfd from 'danfojs-node';
   const normalizedTestData = testData.map(item => {
     const normalized = {...item};
