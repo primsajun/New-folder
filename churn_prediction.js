@@ -102,7 +102,7 @@ import * as dfd from 'danfojs-no
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {   // Calculate churn r
   const totalCustomers = data.length;
-  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
+  const = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
   
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
