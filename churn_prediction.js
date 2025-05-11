@@ -155,8 +155,7 @@ import * as dfd from 'danfojs-no
   
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {
-    const normalized = {...a = testData.map(item => {
-    const normalized = {...item};
+    const normalized = {...a = testData.map(ionst normalized = {...item};
      // Calculate churn rate
   const totalCustomers = data.length;
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
