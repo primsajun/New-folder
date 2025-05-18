@@ -13,7 +13,6 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
   
      // Calculate churn rate
-
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / to
 
