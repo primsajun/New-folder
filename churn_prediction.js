@@ -30,7 +30,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
     const normalized = {...  // Calculate chu
   const totalCustomers = data.lengt
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
-     // Calculate
+    
   const totalCustomers = data.length;
   const churnRate = churnedCustomers / totalCustom
   consoleconst totalCustomers = data.lengt
