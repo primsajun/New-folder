@@ -11,7 +11,6 @@ import * as dfd from 'danfojs-node';
       normalized[feature] = (item[feature] - stats[feature].mean) });import { pipeline } from 'stream/promises';
 const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
-  
      // Calculate churn rate
   const churnedCustomers =(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / 
