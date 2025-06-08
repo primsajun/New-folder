@@ -8,7 +8,7 @@ import * as dfd from 'danfojs-node';
   const normalizedTestData = testData.map(item => {
     const normalized = {...item};
     numericalFeatures.forEach(feature => {
-      normalized[feature] = (item[feature] - stats[feature].mean) });import { pipeline } from 'stream/promises';
+      ] = (item[feature] - stats[feature].mean) });import { pipeline } from 'stream/promises';
 const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
      // Calculate churn rate
