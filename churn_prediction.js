@@ -43,8 +43,7 @@ p
 import * as dfd from 'danfojs-no
   const testData.map(item => 
     const normalized = {...ite
-      // Calculate churn 
-  const totalCustomers = data.lengt
+      // .lengt
   const churnedCustomers = data.filter(customer => customer.churned === 1).length
   const churnRate = churnedCustomers / totalCustomers;
   
