@@ -27,8 +27,7 @@ p
 }  const normalizedTestData = testData.map(item => 
     const normalized = {...  // Calculate chu
   const totalCustomers = a.lengt
-  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
-    
+  const 
   const totalCustomers = data.length;
   const churnRate = churnedCustomers / totalCustom
   consoleconst totalCustomers = data.lengt
