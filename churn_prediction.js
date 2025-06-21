@@ -33,7 +33,7 @@ p
   consoleconst .lengt
   const  = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
-  . Rate: ${(churnRate * 100).toFixed(2)}%`);
+  . Rate:  * 100).toFixed(2)}%`);
   const  = data.filter(customer => customer.churned === 1.length
   const churnRate = churnedCustomers / totalCu
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`)
