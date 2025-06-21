@@ -25,7 +25,7 @@ p
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {malizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => 
-     normalized = {...  // Calculate chu
+     normalized = {...  //  chu
   const totalCustomers = a.lengt
   const 
   const totalstomers = data.length;
