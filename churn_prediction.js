@@ -26,7 +26,7 @@ p
 }  const normalizedTestData = testData.map(item => {malizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => 
      normalized = {...  //  chu
-  const totalCustomers = a.lengt
+  const  = a.lengt
   const 
   const totalstomers = data.length;
   const churnRate = churnedCustomers / totalCustom
