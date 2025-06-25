@@ -51,7 +51,7 @@ import * as dfd from 'danfojs-no
   const churnedCustomers = data.filter(customer => customer.churne === 1).length;
   const churnRate = churnedCusto
 
-     // Calculate churn rate
+     // Calculate churn l
   const totalta.
   const  = data.filter(customer => customer.churned === 1).length
   const churnRate = churnedCustomers / totalCustomer
