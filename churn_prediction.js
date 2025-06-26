@@ -22,7 +22,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   
 p
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFxed(2)}%`)
-  return { normalizedTrainData, normalizedTestData, stats };
+  return { , normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {malizedTrainData, normalizedTestData, stats };
 }  const  = testData.map(item => 
      normalized = {...  //  chu
