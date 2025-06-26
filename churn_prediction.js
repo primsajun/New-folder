@@ -24,7 +24,7 @@ p
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFxed(2)}%`)
   return { normalizedTrainData, normalizedTestData, stats };
 }  const normalizedTestData = testData.map(item => {malizedTrainData, normalizedTestData, stats };
-}  const normalizedTestData = testData.map(item => 
+}  const  = testData.map(item => 
      normalized = {...  //  chu
   const  = a.lengt
   const 
