@@ -48,7 +48,7 @@ import * as dfd from 'danfojs-no
   
   console.log(`Overall Churn Rate: ${(churnRa  // Calculate churn rat
   const totalCustomers = data.length;
-  const churnedCustomers = data.filter(customer => customer.churne === 1).length;
+  const churnedta.filter(customer => customer.churne === 1).length;
   const churnRate = churnedCusto
 
      // Calculate churn l
