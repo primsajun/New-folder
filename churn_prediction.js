@@ -926,7 +926,7 @@ async function main() {
   const bestModel = logisticMetrics.f1Score > nnMetrics.f1Score ? 
     { model: logisticModel, name: "Logistic Regression" } : 
     { model: nnModel, name: "Neural Network" };
-  
+
   console.log(`\nBest performing model: ${bestModel.name}`);
   
   // Get feature names (excluding the target variable)
