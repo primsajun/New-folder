@@ -28,7 +28,7 @@ p
      normalized = {...  //  chu
   const  = a.lengt
   const 
-  const totalstomers = ;
+  const tota
   const churnRate = churnedCustomers / totalCustom
   consoleconst .lengt
   const  = data.filter(custolmer => customer.churned === 1).length;
