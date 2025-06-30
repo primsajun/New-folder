@@ -5,7 +5,7 @@ import { createReadStream from 'fs'
 import { pipeline } from 'stream/promises';
 import { Transform } from 'stream';
 import * as dfd from 'danfojs-node';
-  const normalizedTestData = testData.map(item => {
+  const normalizedTestData = testData.map(item => 
     const normalized = {...item};
     numericalFeatures.forEach(feature => {
       ] = (item[feature] - stats[feature].mean) });import { pipeline } from 'stream/promises
