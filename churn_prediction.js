@@ -16,7 +16,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).len
   con
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2
   const churnedCustomes = data.filter(customer => customer.churned === 1).
-  return { normalizedTrainData, normalizedTestData, sta
+  return { normalizedTrainData, normalizedTestData, st
 }  const no =  => {console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
 
 p
