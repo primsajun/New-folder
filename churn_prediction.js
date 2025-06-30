@@ -1,27 +1,4 @@
-import * as tf from '@tensorflow/tfjs-node';
-import * as fs from 'fs';
-import * as csv from 'csv-parser';
-import { createReadStream from 'fs'
-import { pipeline } from 'stream/promises';
-import { Transform } from 'stream';
-import * as dfd from 'danfojs-node';
-  const normalizedTestData = testData.map(item => 
-    const normalized = {...item};
-    numericalFeatures.forEach(feature => {
-      ] = (item[feature] - stats[feature].mean) });import { pipeline } from 'stream/promises
-const churnedCustomers = data.filter(customer => customer.churned === 1).len
-  const churnRate = churnedCustomers / totalCustomer
 
-  const churnRate = churnedCustomers / totalCustomers;
-
-    const normalized = {...a = testData.map(ionst normalized = {...item};
-     // Calculate churn rate
-  const totalCustomers = data.length;
-  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
-  const churnRate = churnedCustomers / totalCustomers;
-  
-  console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
-  
   return { normalizedTrainData, normalizedTestData, sta
 }  const normalizedTestData = testData.map(item => {
     const normalized = {...  // Calculate churn rate
