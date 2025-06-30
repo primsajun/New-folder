@@ -13,7 +13,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
      // Calculate chu
   const churnedCustomers =(customer => customer.churned === 1).length
-  const  /
+  const  
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)%`)
   const churnedCustomes = data.filter(customer => customer.churned === 1).lengt
   return { normalizedTrainData, normalizedTestData, stats }
