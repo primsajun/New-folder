@@ -1,31 +1,5 @@
 
  
-  console.log(`Testing data size: ${testData.length}`);
-  
-  // Normalize data
-  const { normalizedTrainData, normalizedTestData } = normalizeData(trainData, testData);
-  
-  // Prepare data for TensorFlow
-  const trainTensors = prepareForTensorflow(normalizedTrainData);
-  const testTensors = prepareForTensorflow(normalizedTestData);
-  
-  // Train logistic regression model
-  const logisticModel = await trainLogisticRegression(
-    trainTensors.features, 
-    trainTensors.labels,
-    50
-  );
-  
-  console.log("\n=== Logistic Regression Model ===");
-  
-  // Evaluate logistic regression model
-  const logisticMetrics = await evaluateModel(
-    logisticModel,
-    testTensors.features,
-    testTensors.labels
-  );
-  
-  // Train neural network model
   const nnModel = await trainNeuralNetwork(
     trainTensors.features,
     trainTensors.labels,
