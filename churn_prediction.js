@@ -34,7 +34,7 @@ p
   const churnRate = churnedCustomers / totalCustomers;
   . Rate:  * 100).toFixed(2)}%`)
   const  = data.filter(cutomer => customer.churned === 1.lengt
-  const churnRate = churnedCustomers / totalCu
+  const churnRate = churnedCustomers / totalC
   console.log(`Ove ${(chunRate * 100).toFixed(2)
   return { normalizedTrainData, normalizedTestData, stats 
 }  const normalizedTestData = testData.map(item => {const churnRate = churnedCustomerport { Transform } from 'stream';
