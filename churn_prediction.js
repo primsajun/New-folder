@@ -39,16 +39,7 @@ const churnedCustomers = data.filter(customer => customer.churned === 1).len
   const churnRate = churnedCustomers / totalCustomers;
 
   const churnRate = churnedCustomers / totalCustomers;
-  
-  console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
-  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
-  const churnRate = churnedCustomers / totalCustomers;
-  
-  console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
-  
-  return { normalizedTrainData, normalizedTestData, stats };
-}  const normalizedTestData = testData.map(item => { const normalized = {...item};
-    numericalFeatures.forEach(feature => {
+
       normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
     });import { pipeline } from 'stream/promises';
 import { Transform } from 'stream';
