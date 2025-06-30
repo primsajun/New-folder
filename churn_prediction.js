@@ -1,31 +1,5 @@
 
-  const potentialChurnReduction = 0.2; // Assume we can reduce churn by 20% with targeted interventions
-  const newChurnRate = churnRate * (1 - potentialChurnReduction);
-  const newAvgCustomerLifetime = 1 / newChurnRate;
-  const newCustomerLifetimeValue = avgCustomerValue * newAvgCustomerLifetime;
-  const valueIncrease = newCustomerLifetimeValue - customerLifetimeValue;
-  
-  console.log("\nRetention Strategy ROI:");
-  console.log(`If churn is reduced by 20%, Customer Lifetime Value increases by $${valueIncrease.toFixed(2)} per customer`);
-  console.log(`For a customer base of ${totalCustomers}, this represents $${(valueIncrease * totalCustomers).toFixed(2)} in additional lifetime value`);
-}
-
-// Main function to orchestrate the entire process
-async function main() {
-  console.log("=== Customer Churn Prediction for SaaS Platforms ===\n");
-  
-  // Generate synthetic data
-  const rawData = generateSyntheticData(1000);
-  
-  // Preprocess data
-  const processedData = preprocessData(rawData);
-  
-  // Engineer features
-  const enhancedData = engineerFeatures(processedData);
-  
-  // Split data
-  const { trainData, testData } = splitData(enhancedData);
-  console.log(`Training data size: ${trainData.length}`);
+ 
   console.log(`Testing data size: ${testData.length}`);
   
   // Normalize data
