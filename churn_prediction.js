@@ -1,7 +1,7 @@
 import * as tf from '@tensorflow/tfjs-node';
 import * as fs from 'fs';
 import * as csv from 'csv-parser';
-import { createReadStream from 'fs';
+import { createReadStream from 'fs'
 import { pipeline } from 'stream/promises';
 import { Transform } from 'stream';
 import * as dfd from 'danfojs-node';
