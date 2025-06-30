@@ -33,7 +33,7 @@ p
   const  = data.filter(custolmer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
   . Rate:  * 100).toFixed(2)}%`)
-  const  = data.filter(cutomer => customer.churned === 1.length
+  const  = data.filter(cutomer => customer.churned === 1.lengt
   const churnRate = churnedCustomers / totalCu
   console.log(`Ove ${(chunRate * 100).toFixed(2)}%`
   return { normalizedTrainData, normalizedTestData, stats }
