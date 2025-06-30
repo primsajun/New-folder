@@ -72,13 +72,7 @@ import * as dfd from 'danfojs-node';
   console.log(`Overall Churn Rate: ${(churnRate * 100).toFixed(2)}%`);
   
   return { normalizedTrainData, normalizedTestData, stats };
-}  const normalizedTestData = testData.map(item => {
-    const normalized = {...
-    return normalized;
-  });import { pipeline } from 'stream/promises';
-import { Transform } from 'stream';
-import * as dfd from 'danfojs-node';
-  const normalizedTestData = testData.map(item => {
+}  const normalizedTestData 
     const normalized = {...item};
     numericalFeatures.forEach(feature => {
       normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
