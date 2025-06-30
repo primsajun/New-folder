@@ -1,31 +1,4 @@
 
-  return { normalizedTrainData, normalizedTestData, sta
-}  const normalizedTestData = testData.map(item => {
-    const normalized = {...  // Calculate churn rate
-  const totalCustomers = data.length;
-  const churnedCustomers = data.filter(customer => customer.churned === 1).length;
-  const churnRate = churnedCustomers / totalCustomers;
-
-  const churnRate = churnedCustomers / totalCustomers;
-
-      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
-    });import { pipeline } from 'stream/promises';
-import { Transform } from 'stream';
-
-    });import { pipeline } from 'stream/promises';
-
-  
-  // ROI calculation for retention efforts
-  const avgCustomerValue = data.reduce((sum, customer) => sum + customer.monthlySpend, 0) / totalCustomers;
-  const avgCustomerLifetime = 1 / churnRate; // in months
-  const customerLifetimeValue = avgCustomerValue * avgCustomerLifetime;
-  
-  console.log("\nCustomer Economics:");
-  console.log(`Average Monthly Revenue per Customer: $${avgCustomerValue.toFixed(2)}`);
-  console.log(`Average Customer Lifetime (months): ${avgCustomerLifetime.toFixed(1)}`);
-  console.log(`Customer Lifetime Value: $${customerLifetimeValue.toFixed(2)}`);
-  
-  // Retention strategy ROI
   const potentialChurnReduction = 0.2; // Assume we can reduce churn by 20% with targeted interventions
   const newChurnRate = churnRate * (1 - potentialChurnReduction);
   const newAvgCustomerLifetime = 1 / newChurnRate;
