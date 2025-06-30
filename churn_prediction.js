@@ -46,13 +46,6 @@ import { Transform } from 'stream';
 
     });import { pipeline } from 'stream/promises';
 
-    });
-    return normalized;
-  });
-  function generateBusinessInsights(data, metrics, featureImportance) {
-  console.log("\nGenerating business insights...");
-  
-  // Calculate churn rate
   const totalCustomers = data.length;
   const churnedCustomers = data.filter(customer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
