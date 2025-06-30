@@ -1,29 +1,5 @@
 
  
-  const nnModel = await trainNeuralNetwork(
-    trainTensors.features,
-    trainTensors.labels,
-    50
-  );
-  
-  console.log("\n=== Neural Network Model ===");
-  
-  // Evaluate neural network model
-  const nnMetrics = await evaluateModel(
-    nnModel,
-    testTensors.features,
-    testTensors.labels
-  );
-  
-  // Determine which model performed better
-  const bestModel = logisticMetrics.f1Score > nnMetrics.f1Score ? 
-    { model: logisticModel, name: "Logistic Regression" } : 
-    { model: nnModel, name: "Neural Network" };
-
-  console.log(`\nBest performing model: ${bestModel.name}`);
-  
-  // Get feature names (excluding the target variable)
-  const sampleFeatures = {...normalizedTrainData[0]};
   delete sampleFeatures.churned;
   const featureNames = Object.keys(sampleFeatures);
   
