@@ -77,15 +77,7 @@ import { Transform } from 'stream';
   });
   
   return { normalizedTrainData, normalizedTestData, stats };
-}  const normalizedTestData = testData.map(item => {
-    const normalized = {...item};
-    numericalFeatures.forEach(feature => {
-      normalized[feature] = (item[feature] - stats[feature].mean) / (stats[feature].std || 1);
-    });
-    return normalized;
-  });
-  
-  return { normalizedTrainData, normalizedTestData, stats };
+}  
 }
 // Generate synthetic SaaS customer data for demonstration
 function generateSyntheticData(numSamples = 1000) {
