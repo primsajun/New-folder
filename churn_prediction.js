@@ -29,7 +29,7 @@ p
   const 
   const tota
   const churnRate = churnedCustomers / totalCustom
-  consoleconst .lengt
+  consoleconst .leng
   const  = data.filter(custolmer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
   . Rate:  * 100).toFixed(2)}%`)
