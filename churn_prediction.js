@@ -11,14 +11,7 @@ import * as dfd from 'danfojs-node';
       ] = (item[feature] - stats[feature].mean) });import { pipeline } from 'stream/promises
 const churnedCustomers = data.filter(customer => customer.churned === 1).len
   const churnRate = churnedCustomers / totalCustomer
-     // Calculate 
 
-  const  = a.lengt
-  const 
-  const tota
-  const churnRate = churnedCustomers / totalCustom
-  consoleconst .leng
-  const  = data.filter(custolmer => customer.churned === 1).length;
   const churnRate = churnedCustomers / totalCustomers;
   . Rate:  * 100).toFixed(2)}%`)
   const  = data.filter(cutomer => customer.churned === 1.lengt
