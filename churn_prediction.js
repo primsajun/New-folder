@@ -1,65 +1,59 @@
-import java.util.*;
+const readline = require("readline");
 
-public class ChatAIBot {
 
-    private static final Scanner scanner = new Scanner(System.in);
-    private static final Map<String, String> responses = new HashMap<>();
-    private static final List<String> unknownResponses = Arrays.asList(
-        "I'm not sure I understand that.",
-        "Can you tell me more?",
-        "Interesting... go on.",
-        "I see. Can you elaborate?",
-        "Hmm, let me think about that..."
-    );
+const responses = {
+  hi: "Hi there!",
+  hello: "Hello! How can I assist you?",
+  "how are you": "I'm just a bot, but I'm doing great!",
+  "what is your name": "I'm a simple JavaScript ChatBot.",
+  help: "Sure! Ask me anything.",
+  time: "I don't have a watch, but your system clock does!",
+  date: "Today is a great day!",
+  "who made you": "I was created by a JavaScript programmer.",
+  joke: "Why don't scientists trust atoms? Because they make up everything!",
+};
 
-    public static void main(String[] args) {
-        System.out.println("🤖 ChatBot: Hello! I'm your Java AI Bot. Type 'bye' to exit.");
-        setupResponses();
+const unknownResponses = [
+  "I'm not sure I understand that.",
+  "Can you tell me more?",
+  "Interesting... go on.",
+  "I see. Can you elaborate?",
+  "Hmm, let me think about that...",
+];
 
-        while (true) {
-            System.out.print("You: ");
-            String userInput = scanner.nextLine().trim();
 
-            if (userInput.equalsIgnoreCase("bye")) {
-                System.out.println("🤖 ChatBot: Goodbye! Have a nice day.");
-                break;
-            }
+function getResponse(input) {
+  input = input.toLowerCase();
 
-            String response = getResponse(userInput);
-            System.out.println("🤖 ChatBot: " + response);
-        }
+  for (const key in responses) {
+    if (input.includes(key)) {
+      return responses[key];
     }
+  }
 
-    
-    private static void setupResponses() {
-        responses.put("hi", "Hi there!");
-        responses.put("hello", "Hello! How can I assist you?");
-        responses.put("how are you", "I'm just a bot, but I'm doing well!");
-        responses.put("what is your name", "I'm a simple Java ChatBot.");
-        responses.put("help", "Sure! Ask me anything.");
-        responses.put("time", "I don't have a watch, but your system clock knows!");
-        responses.put("date", "I think it's a lovely day today!");
-        responses.put("who made you", "I was created by a Java programmer.");
-        responses.put("joke", "Why don't scientists trust atoms? Because they make up everything!");
-    }
-
-    
-    private static String getResponse(String input) {
-        input = input.toLowerCase();
-
-        for (String key : responses.keySet()) {
-            if (input.contains(key)) {
-                return responses.get(key);
-            }
-        }
-
-        
-        return getRandomUnknownResponse();
-    }
-
-    private static String getRandomUnknownResponse() {
-        Random random = new Random();
-        return unknownResponses.get(random.nextInt(unknownResponses.size()));
-    }
+  return unknownResponses[Math.floor(Math.random() * unknownResponses.length)];
 }
 
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+console.log("🤖 ChatBot: Hello! I'm your JavaScript AI Bot. Type 'bye' to exit.");
+
+function chatLoop() {
+  rl.question("You: ", (userInput) => {
+    if (userInput.toLowerCase() === "bye") {
+      console.log("🤖 ChatBot: Goodbye! Have a nice day.");
+      rl.close();
+      return;
+    }
+
+    const response = getResponse(userInput);
+    console.log("🤖 ChatBot:", response);
+    chatLoop();
+  });
+}
+
+chatLoop();
