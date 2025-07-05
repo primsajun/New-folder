@@ -6,7 +6,7 @@ const responses = {
   hello: "Hello! How can I assist you?",
   "how are you": "I'm just a bot, but I'm doing great!",
   "what is your name": "I'm a simple JavaScript ChatBot.",
-  help: "Sure! Ask me anything.",
+  help: "Sure! Ask me anything....",
   time: "I don't have a watch, but your system clock does!",
   date: "Today is a great day!",
   "who made you": "I was created by a JavaScript programmer.",
