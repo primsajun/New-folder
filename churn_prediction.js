@@ -1,6 +1,6 @@
 const readline = require("readline");
 const responses = {
-  hi: "Hi there!",
+  hi: "Hi  there!",
   hello: "Hello! How can I assist you?",
   "how are you": "I'm just a bot, but I'm doing great!",
   "what is your name": "I'm a simple JavaScript ChatBot.",
