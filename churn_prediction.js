@@ -18,7 +18,6 @@ const unknownResponses = [
   "Hmm, let me think about that...",
 ];
 
-
 function getResponse(input) {
   input = input.toLowerCase();
 
