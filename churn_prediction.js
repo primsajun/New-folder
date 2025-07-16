@@ -26,7 +26,7 @@ function getResponse(input) {
       return responses[key];
     }
   }
-
+ 
   return unknownResponses[Math.floor(Math.random() * unknownResponses.length)];
 }
 
