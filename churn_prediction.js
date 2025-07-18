@@ -16,7 +16,7 @@ const unknownResponses = [
   "Interesting... go on.",
   "I see. Can you elaborate?",
   "Hmm, let me think about that...",
-];
+]; 
 
 function getResponse(input) {
   input = input.toLowerCase();
