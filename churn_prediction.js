@@ -10,7 +10,7 @@ const responses = {
   date: "Today is a great day!",
   "who made you": "I was created by a JavaScript programmer.",
   joke: "Why don't scientists trust atoms? Because they make up everything!",
-}; 
+};  
 const unknownResponses = [
   "I'm not sure I understand that.",
   "Can you tell me more?",
